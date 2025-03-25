@@ -3,276 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fiona</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Fiona Meng | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            background-color: rgb(39, 36, 36);
-            font: 20px 'Dosis', sans-serif;
-        }
-        .nav-item a{
-            color: #f8f9fa;
-        }
-        .navbar-brand {
-            color: #f8f9fa !important;
-            font-optical-sizing: auto;
-            font-weight: 500;
-            font-size: 30px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-family: "Annie Use Your Telescope", serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-        .nav-link:hover {
-        color: #c6c1ba;
-        }
-
-        .circular-img {
-        border-radius: 50%;
-        width: 300px;
-        height: 300px;
-        object-fit: cover;
-        border: 0px;
-        }
-
-        .list-group-item{
-        background-color: rgb(39, 36, 36);
-        color: #f8f9fa;
-        border-color: rgba(255,255,255,0.125);
-        font: 5px;
-        }
-
-        .card {
-        background-color: rgb(39, 36, 36);
-        color: #f8f9fa;
-        margin-bottom: 1rem;
-        border: 0px;
-        }
-
-        .card-text {
-        font: 20px 'Dosis', sans-serif;
-        }
-
-        .card-title {
-        font: 30px 'Dosis', sans-serif;
-        }
-
-        .content-wrapper {
-        position: relative;
-        }
-
-        .translation-card {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        z-index: 1000;
-        margin-top: 10px;
-        }
-
-        .btn-primary {
-        background-color: transparent;
-        border: 0 px solid #f8f9fa;
-        color: #f8f9fa;
-        padding: 10px 20px;
-        border-radius: 25px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size: 14px;
-        transition: all 0.3s ease;
-        margin-top: 15px;
-        text-decoration: none;
-        border-color: #f8f9fa;
-        }
-
-        .btn-primary:hover {
-            background-color: #f8f9fa;
-            color: rgb(39, 36, 36);
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(248, 249, 250, 0.2);
-        }
-        .translation-card {
-            display: none;
-            margin-top: 20px;
-        }
-
-        .center-content {
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        }
-
-        .content-wrapper {
-            position: relative;  /* Parent container */
-        }
-
-        .HelloMessage {
-            padding: 100px;
-            margin-left: 150px;
-        }
-
-        .about {
-            padding: 150px;
-            margin-top: 150px;
-            margin-left: 150px;
-        }
-        
-        .contact {
-            padding: 150px;
-            margin-top: 150px;
-            margin-left: 10px;
-            margin-bottom: 200px;
-        }
-
-        html {
-        scroll-behavior: smooth;
-        }
-
-        
-        
-</style>
-
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="header">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand">Fiona</a>
-                <div class="collapse navbar-collapse justify-content-end">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <p class="name">Fiona Meng</p>
+        <nav class="right-align navbar">
+                <a class="navbar" href="#about">About</a>
+                <a class="navbar" href="#projects">Projects</a>
+                <a class="navbar" href="#contact">Contact</a>
+                <a class="navbar" href="https://github.com/fiona-meng">Github</a>
         </nav>
     </div>
-    <section class="HelloMessage">
-        <div class="container py-5">
-            <div class="row align-items-center justify-content-center g-4">
-                <!-- Text column - stack on small screens, side by side on medium+ -->
-                <div class="col">
-                    
-                </div>
-                <div class="col">
-                    
-                </div>
-                <div class="col-lg-5 col-md-8 col-sm-12">
-                    <div class="content-wrapper">
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                <h5 class="card-title">Message From Fiona:</h5>
-                                    <p>48 65 6c 6c 6f 2c 20 49 20 61 6d 20</p>
-                                    <p>46 69 6f 6e 61 20 7c 20 46 61 6e 79</p>
-                                    <p>75 65 20 4d 65 6e 67 2e</p>
-                            </div>
-                        </div>
-                        <a class="btn btn-primary w-100 mb-3" onclick="showTranslation()">Translate</a>
-                        <div class="card translation-card" id="translationCard">
-                            <div class="card-body" style="background-color:rgb(39, 36, 36);">
-                                <p class="card-text">Hello, I am Fiona | Fanyue Meng.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Image column -->
-                <div class="col-lg-6 col-md-8 col-sm-12">
-                    <img src="images/fiona.JPG" alt="Fiona_image" class="img-fluid circular-img">
-                </div>
-                <div class="col">
-                    1 of 3
-                </div>
+
+    <section class="me">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Hello!</h1>
+                <span class="outline">I'm Fiona Meng</span>
+                <p class="highlight">A passionate developer. Welcome to my portfolio!</p>
+            </div>
+            <div class="col-md-6">
+                <img class="selfie" src="images/selfie.JPG" alt="Me">
             </div>
         </div>
     </section>
-    <section id = "about" class="about">
+
+    
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <hr class="hr">
         <div class="row">
-            <div class="col-md-8" style="color:#f8f9fa">
-                <h1>About Me</h1>
-                <p>Hello! My name is Fanyue Meng and I am a developer. 
+            <div class="col-lg-6 col-md-6">
+                <p class="introduction">Hello! My name is Fanyue Meng and I am a developer. 
                     I am currently pursuing a master degree in Computer Science, 
                     furthering my knowledge and skills in the field. I am always 
                     looking for new challenges and opportunities to apply and 
                     expand my knowledge.</p>
-                <div class="row">
-                    <!-- Interest Section -->
-                    <div class="col-md-6">
-                        <section class="interest list-group-item">
-                            <h1>Interest</h1>
-                            <ul>
-                                <li>Software Developer</li>
-                                <li>Data Scientist</li>
-                                <li>Design</li>
-                                <li>Photography</li>
-                            </ul>
-                        </section>
+                    <div class="skills-container my-4">
+                        <div class="skill-badge"><i class="fab fa-python"></i> Python</div>
+                        <div class="skill-badge"><i class="fab fa-js"></i> JavaScript</div>
+                        <div class="skill-badge"><i class="fab fa-react"></i> React</div>
+                        <div class="skill-badge"><i class="fab fa-node-js"></i> Node.js</div>
+                        <div class="skill-badge"><i class="fas fa-database"></i> SQL</div>
+                        <div class="skill-badge"><i class="fab fa-aws"></i> AWS</div>
+                        <div class="skill-badge"><i class="fas fa-brain"></i> Machine Learning</div>
+                        <div class="skill-badge"><i class="fab fa-html5"></i> HTML/CSS</div>
                     </div>
-                    
-                    <!-- Education Section -->
-                    <div class="col-md-6">
-                        <section class="Eduation list-group-item">
-                            <h1>Education</h1>
-                            <ul>
-                                <li>Columbia University: MS in Computer Science</li>
-                                <li>New York University: BS in Mathematics</li>
-                            </ul>
-                        </section>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <h3>Education</h3>
+                        <ul class="education-list">
+                            <li>Columbia University: MS in Computer Science</li>
+                            <li>New York University: BS in Mathematics</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <h3>Interest</h3>
+                        <ul class="interest-list">
+                            <li>Machine Learning</li>
+                            <li>Software Development</li>
+                            <li>Data Science & Analytics</li>
+                            <li>UI/UX Design</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="projects">
+        <h2 class="section-title">My Projects</h2>
+        <hr class="hr">
+        
+        <div class="project-container">
+            <!-- Project 1 -->
+            <div class="project-item">
+                <div class="project-year">2025</div>
+                <div class="project-content">
+                    <h3 class="project-title">
+                        Planner <a href="https://mycalendarfrontend.vercel.app/" target="_blank" class="project-link">↗</a>
+                    </h3>
+                    <p class="project-description">MyCalendar is a modern, intuitive calendar and task management application built with React. It combines event scheduling with todo list functionality, providing users with a seamless experience for managing their time and tasks.</p>
+                    <div class="tech-badges">
+                        <span class="skill-badge"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="skill-badge"><i class="fab fa-react"></i> React</span>
+                        <span class="skill-badge"><i class="fab fa-node-js"></i> Node.js</span>
+                        <span class="skill-badge"><i class="fas fa-database"></i> MongoDB</span>
+                        <span class="skill-badge"><i class="fab fa-express"></i> Express</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-item">
+                <div class="project-year">2025</div>
+                <div class="project-content">
+                    <h3 class="project-title">NYC BrunchBuzz <a href="https://brunch-buzz.vercel.app/" target="_blank" class="project-link">↗</a></h3>
+                    <p class="project-description">BrunchBuzz is a web application designed to help users discover high-rated brunch restaurants in New York City. After a grueling week of classes at Columbia, students deserve to treat themselves, and finding an exceptional brunch restaurant is the perfect weekend reward.
+                    </p>
+                    <div class="tech-badges">
+                        <span class="skill-badge"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="skill-badge"><i class="fab fa-python"></i> Python</span>
+                        <span class="skill-badge"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                        <span class="skill-badge"><i class="fab fa-flask"></i> Flask</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project-item">
+                <div class="project-year">2024</div>
+                <div class="project-content">
+                    <h3 class="project-title">Management System <a href="https://github.com/0Christ1/NYUPD" target="_blank" class="project-link">↗</a></h3>
+                    <p class="project-description">Our platform provides a secure, multi-user database management system that enables efficient data manipulation. Users can seamlessly retrieve, add, update, and delete information while benefiting from robust security measures, including credential verification, data encryption, and automatic session management.</p>
+                    <div class="tech-badges">
+                        <span class="skill-badge"><i class="fas fa-database"></i> SQL</span>
+                        <span class="skill-badge"><i class="fab fa-php"></i> PHP</span>
+                        <span class="skill-badge"><i class="fab fa-html5"></i> HTML/CSS</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     
-    <section id = "contact" class="contact py-5">
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <hr class="hr">
         <div class="container">
+            
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <form action="https://api.web3forms.com/submit" method="POST" class="d-flex flex-column gap-3">
+                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="simple-card">
                         <input type="hidden" name="access_key" value="3c55c3f9-119c-40a6-b152-36aa9b53733e">
-                        <h1 class="form-label" style="color:#f8f9fa">Contact Me</h1>
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                        
                         <div class="form-group">
-                            <label for="name" class="form-label text-white">Name:</label>
+                            <label for="name" class="form-label">Name:</label>
                             <input type="text" class="form-control" id="name" name="name" required placeholder="Your name...">
+                            <div class="error-message" id="nameError"></div>
                         </div>
     
                         <div class="form-group">
-                            <label for="email" class="form-label text-white">Email:</label>
+                            <label for="email" class="form-label">Email:</label>
                             <input type="email" class="form-control" id="email" name="email" required placeholder="Your email...">
+                            <div class="error-message" id="emailError"></div>
                         </div>
     
                         <div class="form-group">
-                            <label for="message" class="form-label text-white">Message:</label>
+                            <label for="message" class="form-label">Message:</label>
                             <textarea class="form-control" id="message" name="message" rows="4" required placeholder="Your message..."></textarea>
+                            <div class="error-message" id="messageError"></div>
                         </div>
+                        
+                        <div class="form-status-message" id="formStatus"></div>
     
-                        <button type="submit" class="btn btn-primary">Submit Form</button>
+                        <button type="submit" class="simple-btn">Send Message</button>
                     </form>
+                    
                 </div>
             </div>
         </div>
     </section>
     
+    <footer class="py-4 text-center">
+        <div class="container">
+            <p>© 2025 Fiona Meng. All rights reserved.</p>
+        </div>
+    </footer>
 
-    
-
-
-    <script src="js/bootstrap.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
