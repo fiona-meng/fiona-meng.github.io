@@ -3,9 +3,7 @@ body {
     color: #050315;
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
     font-size: 13px;
-    padding: 40px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 40px 0;
 }
 
 .navbar {
@@ -35,7 +33,7 @@ body {
     width: 100%;
     background-color: #F5EEDC;
     z-index: 1000;
-    padding: 10px 100px;
+    padding: 10px 5vw;
 }
 
 .selfie {
@@ -72,7 +70,7 @@ body {
 }
 
 .me {
-    padding: 150px 200px;
+    padding: 120px 0 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,7 +82,6 @@ body {
     display: flex;
     align-items: center;
 }
-
 
 .me h1 {
     font-size: 90px;
@@ -117,10 +114,10 @@ body {
     font-weight: 700;
 }
 
-#about {
-    padding-top: 100px;
-    padding-left: 200px;
-    padding-right: 200px;
+#about, .projects, .contact {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 80px;
 }
 
 .about .hr {
@@ -213,9 +210,9 @@ body {
 
 /* Projects section styles */
 .projects {
-    padding-top: 300px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-top: 100px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .projects .hr {
@@ -312,10 +309,10 @@ body {
 
 /* Contact section styles */
 .contact {
-    padding-top: 200px;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-bottom: 80px;
+    padding-top: 100px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 60px;
     background-color: #F5EEDC;
 }
 
@@ -331,7 +328,6 @@ body {
     padding: 30px;
     
 }
-
 
 .form-group {
     margin-bottom: 20px;
@@ -356,7 +352,6 @@ body {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-
 .simple-btn {
     background-color: #2f27ce;
     color: white;
@@ -372,10 +367,95 @@ body {
     width: 100%;
 }
 
-
 textarea.form-control {
     resize: vertical;
     min-height: 120px;
+}
+
+@media (max-width: 991.98px) {
+    .me {
+        padding: 80px 0 0 0;
+    }
+    .selfie {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .header {
+        flex-direction: column;
+        padding: 10px 2vw;
+    }
+    .me h1, .me .outline {
+        font-size: 2.5rem;
+    }
+    .selfie {
+        width: 180px;
+        height: 180px;
+    }
+    .me {
+        padding: 60px 0 0 0;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    .project-title {
+        font-size: 20px;
+        flex-wrap: wrap;
+    }
+    .project-description {
+        max-width: 100%;
+    }
+    .project-year {
+        padding-top: 3px;
+    }
+    .project-container:before {
+        left: 30px;
+    }
+    .header .navbar {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .header .navbar a {
+        padding: 5px 8px;
+        font-size: 14px;
+    }
+    .name {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .me {
+        padding: 40px 0 0 0;
+    }
+    .selfie {
+        width: 120px;
+        height: 120px;
+    }
+    .header {
+        padding: 10px 1vw;
+    }
+    .me p.highlight {
+        font-size: 18px;
+        max-width: 100%;
+    }
+    .introduction {
+        font-size: 16px;
+    }
+    .project-title {
+        font-size: 18px;
+    }
+    .project-link {
+        font-size: 18px;
+    }
+    .simple-card {
+        padding: 20px 10px;
+    }
 }
 
 
